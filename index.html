@@ -18,10 +18,8 @@
     <!-- TEMPLATE: MESSAGE MENU -->
     <script id="item-template" type="text/x-handlebars-template">
       <div class="to_do_items" data-id="{{id}}">
-        <p class="delete">X</p>
-
+        <i class="far fa-times-circle delete"></i>
         <h3 class="testo">{{text}}</h3>
-
       </div>
     </script>
 
@@ -32,13 +30,26 @@
 
     <title>ToDoList</title>
   </head>
-  
+
   <body>
-
-    <h1>To do List</h1>
-
     <div class="container">
+      <div class="title">
+        <i class="fas fa-clipboard-list"></i>
+        <h1>To<span>Do</span> List</h1>
+        <i class="fas fa-clipboard-list"></i>
+      </div>
 
+
+      <div class="input_to_add">
+        <input id="user_input" type="text" name="" value="" placeholder="Inserisci qualcosa nella lista">
+        <button id="add_button" type="button" name="button">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="items_container">
+
+      </div>
 
     </div>
 
