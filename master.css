@@ -8,30 +8,90 @@
 }
 
 .container {
-  display: flex;
-  justify-content: space-around;
   width: 100vw;
   height: 100vh;
   padding: 50px 25px;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title i {
+  font-size: 50px;
+  color: rgb(255, 161, 42);
+}
+
+.title h1 {
+  padding: 0 35px;
+  font-size: 50px;
+}
+
+.title span {
+  color: rgb(255, 161, 42);
+}
+
+.input_to_add {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+#user_input {
+  width: 220px;
+  height: 35px;
+  border: 1px solid black;
+  padding-left: 5px;
+}
+
+#add_button {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(255, 161, 42);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#add_button i {
+  font-size: 18px;
+}
+
+.items_container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .to_do_items {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 300px;
   height: 150px;
+  margin-bottom: 30px;
   border: 2px solid black;
-  background: yellow;
+  border-radius: 10px;
+  background: rgb(255, 161, 42);
   color: black;
 }
 
 .delete {
-  align-self: flex-end;
-  border: 1px solid black;
-  margin: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+i.delete {
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .testo {
+  text-align: center;
   margin: auto;
+  padding: 0px 10px;
 }
