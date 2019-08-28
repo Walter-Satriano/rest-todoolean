@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  user-select: none;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 25px;
+  overflow: hidden;
+}
+
+.to_do_items {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  background: yellow;
+  color: black;
+}
+
+.delete {
+  align-self: flex-end;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.testo {
+  margin: auto;
+}
